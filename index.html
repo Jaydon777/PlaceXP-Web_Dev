@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACEXP MOCK PORTAL</title>
+    <link rel="stylesheet" href="new.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="one">
+
+            <label>Create Account</label>
+
+        </div>
+        <div class="two">
+            <form>
+                <label name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required
+                    for="fname" class="Fname">
+                    First name:</label>
+
+                <label for="lname">Last name:</label>
+                <br>
+                <input class="Fbox" type="text" id="fname" placeholder="Your First Name">
+                <input class="Fbox" type="text" id="lname" placeholder="Your Surname">
+                <br><br>
+                <label for="mail">Email*</label>
+                <input type="text" id="mail" placeholder="example@123.com">
+                <br><br>
+                <label for="pswrd" class="pswrd" >Password*</label>
+                <label for="pswrd" >Confirm Password*</label>
+                <br>
+                <input type="password" id="pswrd" class="Fbox" placeholder="Enter new password">
+                <input type="password" id="pswrd" class="Fbox" placeholder="Re-Enter new password">
+                <br><br>
+                <label for="Gender">Gender:</label>
+                <input type="radio" id="Gender" name="G">Male
+                <input type="radio" id="Gender" name="G">Female
+                <br><br>
+                <label for="Hobbies">Hobbies:</label>
+                <input type="checkbox" id="Gender">Music
+                <input type="checkbox" id="Gender">Sport
+                <input type="checkbox" id="Gender">Travel
+                <input type="checkbox" id="Gender">Movies
+                <br><br>
+                <label for="Income">Source of Income:</label>
+                <select name="income" id="Income">
+                    <option> --Select an option-- </option>
+                    <option>Employed</option>
+                    <option>Unemployed</option>
+                </select>
+                <br><br>
+                <label for="money">Income:</label>
+                <input type="range" min="0" max="20L" id="money">
+                <br><br>
+                <label for="upload">Upload Profile Picture:</label>
+                <input type="file" id="upload">
+                <br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+                <br><br>
+                <label type="text" for="age">Bio:</label>
+                <br>
+                <textarea rows="4" cols="50" name="comment"></textarea>
+
+            </form>
+        </div>
+        <div class="End">
+            <button class="But" type="submit" value="Submit">CREATE</button>
+        </div>
+    </div>
+</body>
+
+</html>
